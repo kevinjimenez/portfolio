@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  color-scheme: light dark red;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-brand-secundary;
+  /* background: #d8d9ed; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media (prefer-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

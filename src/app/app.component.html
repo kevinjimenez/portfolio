@@ -1,0 +1,104 @@
+<!-- header -->
+<app-header />
+<main class="px-4">
+  <!-- Home -->
+  <section-container id="top" customClass="py-44 pb-32">
+    <article class="flex flex-row gap-x-4 mb-4">
+      <img
+        class="rounded-full size-12 lg:size-16 border-brand-primary border-2"
+        src="assets/profile/me.jpg"
+        alt="avatar"
+      />
+      <a
+        href="/"
+        target="_blank"
+        rel="noopener"
+        class="flex justify-center items-center"
+      >
+        <badge> Disponible para trabajar </badge>
+      </a>
+    </article>
+    <h1
+      class="text-3xl md:text-4xl lg:text-5xl font-bold flex flex-col gap-x-4 pb-6 lg:pb-10 text-brand-primary"
+    >
+      <span class="typing-letter my-2">Hola, Soy Kevin!</span>
+      <span class="flex flex-wrap md:flex-row gap-y-2">
+        <badge> Software engineer </badge>
+        <badge> Software developer </badge>
+        <badge> Fullstack developer </badge>
+        <badge> NestJS </badge>
+        <badge> Angular </badge>
+        <badge> Vue </badge>
+        <badge> React </badge>
+      </span>
+    </h1>
+    <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+      <span class="text-brand-primary">+5 años de experiencia. </span>
+      <span class="text-brand-primary/90">Desarrollador Fullstack</span>.
+      <span class="text-brand-primary/90">De Quito , Ecuador 🇪🇨</span>.
+      <span class="text-brand-primary opacity-75">
+        Especializado en desarrollo de software.
+      </span>
+    </h2>
+
+    <nav class="flex gap-4 mt-8 flex-wrap" aria-label="social">
+      <social-pill href="https://www.linkedin.com/in/kevin-jimenez-a7321b193/">
+        <linked-in customClass="size-4 md:size-6" />
+        LinkedIn
+      </social-pill>
+      <social-pill href="https://github.com/kevinjimenez">
+        <github customClass="size-4 md:size-6" />
+        Github
+      </social-pill>
+      <social-pill href="mailto:orlando.kj24@gmai.com">
+        <mail customClass="size-4 md:size-6" />
+        Contactame
+      </social-pill>
+    </nav>
+  </section-container>
+
+  <!-- Experience -->
+  <section-container id="experience">
+    <section-title>
+      <briefcase customClass="size-7" />
+      Experience
+    </section-title>
+    <experience />
+  </section-container>
+
+  <!-- Project -->
+  <section-container id="projects">
+    <section-title>
+      <app-code customClass="size-7" />
+      Projectos
+    </section-title>
+    <projects />
+  </section-container>
+
+  <!-- About me -->
+  <section-container id="about-me">
+    <section-title>
+      <user customClass="size-7" />
+      Sobre mi
+    </section-title>
+    <div class="w-full flex flex-row gap-x-4 items-center justify-center">
+      <p class="text-pretty text-brand-primary">
+        Soy un apasionado de la tecnología y disfruto aprendiendo e investigando
+        sobre nuevas tendencias y avances. Mi especialidad abarca el desarrollo
+        frontend, backend y móvil, áreas en las que me esfuerzo por crear
+        soluciones innovadoras y funcionales. Recientemente, he comenzado a
+        profundizar en el aprendizaje automático (machine learning) y la visión
+        por computadora, campos que me fascinan y en los que estoy expandiendo
+        mis conocimientos. Además de mi interés por la tecnología, disfruto
+        mucho de los videojuegos y soy un entusiasta del fútbol.
+      </p>
+      <img
+        class="h-56 rounded-lg shadow-md transition-transform duration-300 ease-in-out md:hover:scale-105 hover:shadow-lg"
+        src="assets/profile/me.jpg"
+        alt=""
+      />
+    </div>
+  </section-container>
+</main>
+<!-- footer -->
+<app-footer />

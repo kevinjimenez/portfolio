@@ -1,0 +1,7 @@
+.header-contanier {
+  @apply fixed z-10 top-0 rounded-lg shadow mt-1 bg-brand-primary/20 backdrop-blur-lg mb-10 text-brand-primary;
+}
+
+.header-nav {
+  @apply px-4 py-2 flex gap-x-10;
+}

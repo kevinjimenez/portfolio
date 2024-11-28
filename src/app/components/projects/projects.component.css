@@ -1,0 +1,24 @@
+/* Contenedor de imágenes */
+.image-container {
+  display: flex; /* Permite organizar imágenes en filas o columnas */
+  gap: 16px; /* Espaciado entre imágenes */
+  justify-content: start;
+
+}
+
+/* Estilo de las imágenes */
+.image-container img {
+  height: 200px; /* Define una altura uniforme */
+  aspect-ratio: 16/9; /* Mantiene proporción (puedes ajustar: 1/1 para cuadrado) */
+  object-fit: cover; /* Recorta proporcionalmente para llenar el espacio */
+  width: auto; /* Asegura que el ancho se ajuste automáticamente */
+  border-radius: 12px; /* (Opcional) Bordes redondeados para un diseño más elegante */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* (Opcional) Añade sombra para destacar */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* (Opcional) Animación suave */
+}
+
+/* Efecto al pasar el cursor */
+.image-container img:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Realza la sombra */
+}

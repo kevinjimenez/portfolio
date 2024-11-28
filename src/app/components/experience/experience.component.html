@@ -1,0 +1,7 @@
+<ol class="relative border-s border-brand-primary ml-3">
+  @for (experience of experiences(); track $index) {
+  <li class="mb-10 ms-4">
+    <experience-item [experience]="experience" />
+  </li>
+  }
+</ol>
