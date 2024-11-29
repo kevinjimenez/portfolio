@@ -1,6 +1,17 @@
 import { signal } from '@angular/core';
-import { NextComponent } from '../shared/components/icons/next.component';
+import { AndroidComponent } from '../shared/components/icons/android.component';
+import { AngularComponent } from '../shared/components/icons/angular.component';
+import { CssComponent } from '../shared/components/icons/css.component';
+import { FlutterComponent } from '../shared/components/icons/flutter.component';
+import { KotlinComponent } from '../shared/components/icons/kotlin.component';
+import { NestJSComponent } from '../shared/components/icons/nestJS.component';
+import { PostgresComponent } from '../shared/components/icons/postgres.component';
+import { PrismaComponent } from '../shared/components/icons/prisma.component';
 import { TailwindComponent } from '../shared/components/icons/tailwind.component';
+import { TypescriptComponent } from '../shared/components/icons/typescript.component';
+import { NodeComponent } from '../shared/components/icons/node.component';
+import { SqlServerComponent } from '../shared/components/icons/sql-server.component';
+import { TypeormComponent } from '../shared/components/icons/typeorm.component';
 
 export interface Experience {
   date: string;
@@ -84,15 +95,70 @@ export const EXPERIENCES = signal<Experience[]>([
 ]);
 
 const TAGS = signal<Record<string, Tag>>({
-  NEXT: {
-    name: 'Next.js',
+  NESTJS: {
+    name: 'NestJS',
     class: 'bg-black text-white',
-    icon: NextComponent,
+    icon: NestJSComponent,
+  },
+  ANGULAR: {
+    name: 'Angular',
+    class: 'bg-[#620420]/70 text-white',
+    icon: AngularComponent,
+  },
+  KOTLIN: {
+    name: 'Kotlin',
+    class: 'bg-slate-900/60 text-white',
+    icon: KotlinComponent,
+  },
+  ANDROID: {
+    name: 'Android',
+    class: 'bg-[#0B2311] text-white',
+    icon: AndroidComponent,
   },
   TAILWIND: {
     name: 'Tailwind CSS',
     class: 'bg-[#003159] text-white',
     icon: TailwindComponent,
+  },
+  FLUTTER: {
+    name: 'Flutter',
+    class: 'bg-[#03587D] text-white',
+    icon: FlutterComponent,
+  },
+  CSS: {
+    name: 'CSS',
+    class: 'bg-[#28143D]/70 text-white',
+    icon: CssComponent,
+  },
+  POSTGRES: {
+    name: 'Postgres',
+    class: 'bg-[#03587D] text-white',
+    icon: PostgresComponent,
+  },
+  PRISMA: {
+    name: 'Prisma',
+    class: 'bg-black/60 text-white',
+    icon: PrismaComponent,
+  },
+  TYPESCRIPT: {
+    name: 'Typescript',
+    class: 'bg-[#1D4777] text-white',
+    icon: TypescriptComponent,
+  },
+  NODE: {
+    name: 'Node',
+    class: 'bg-[#162C25] text-white',
+    icon: NodeComponent,
+  },
+  SQLSERVER: {
+    name: 'SQL Server',
+    class: 'bg-black/40 text-white',
+    icon: SqlServerComponent,
+  },
+  TYPEORM: {
+    name: 'TypeORM',
+    class: 'bg-black/60 text-white',
+    icon: TypeormComponent,
   },
 });
 
@@ -105,18 +171,10 @@ export const PROJECTS = signal<Projects[]>([
     github: 'https://github.com/kevinjimenez/shop',
     image: 'assets/projects/shopping-cart.png',
     tags: [
-      TAGS()['NEXT'],
+      TAGS()['ANGULAR'],
       TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
+      TAGS()['TYPESCRIPT'],
+      TAGS()['CSS'],
     ],
   },
   {
@@ -128,18 +186,10 @@ export const PROJECTS = signal<Projects[]>([
       'https://github.com/kevinjimenez/clone-todo-Trello-/tree/clone-planka',
     image: 'assets/projects/default.webp',
     tags: [
-      TAGS()['NEXT'],
+      TAGS()['ANGULAR'],
       TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
+      TAGS()['TYPESCRIPT'],
+      TAGS()['CSS'],
     ],
   },
   {
@@ -150,20 +200,7 @@ export const PROJECTS = signal<Projects[]>([
     github:
       'https://github.com/kevinjimenez/clone-todo-Trello-/tree/clone-planka',
     image: 'assets/projects/default.webp',
-    tags: [
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-    ],
+    tags: [TAGS()['ANGULAR'], TAGS()['TYPESCRIPT'], TAGS()['CSS']],
   },
   {
     title: 'Crytpto Messagge',
@@ -173,18 +210,13 @@ export const PROJECTS = signal<Projects[]>([
     github: 'https://github.com/kevinjimenez/message-crypto',
     image: 'assets/projects/default.webp',
     tags: [
-      TAGS()['NEXT'],
+      TAGS()['NESTJS'],
+      TAGS()['ANGULAR'],
       TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
+      TAGS()['TYPESCRIPT'],
+      TAGS()['CSS'],
+      TAGS()['NODE'],
+      TAGS()['PRISMA'],
     ],
   },
   {
@@ -194,20 +226,7 @@ export const PROJECTS = signal<Projects[]>([
     link: '',
     github: 'https://github.com/kevinjimenez/pokedex-app',
     image: 'assets/projects/default.webp',
-    tags: [
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-    ],
+    tags: [TAGS()['FLUTTER'], TAGS()['ANDROID']],
   },
   {
     title: 'Morty app',
@@ -216,20 +235,7 @@ export const PROJECTS = signal<Projects[]>([
     link: '',
     github: 'https://github.com/kevinjimenez/rick-morty-app',
     image: 'assets/projects/default.webp',
-    tags: [
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-    ],
+    tags: [TAGS()['FLUTTER'], TAGS()['ANDROID']],
   },
   {
     title: 'Api users',
@@ -239,18 +245,11 @@ export const PROJECTS = signal<Projects[]>([
     github: 'https://github.com/kevinjimenez/api-users',
     image: 'assets/projects/default.webp',
     tags: [
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
+      TAGS()['NESTJS'],
+      TAGS()['TYPESCRIPT'],
+      TAGS()['POSTGRES'],
+      TAGS()['PRISMA'],
+      TAGS()['NODE'],
     ],
   },
   {
@@ -260,20 +259,7 @@ export const PROJECTS = signal<Projects[]>([
     link: '',
     github: 'https://github.com/kevinjimenez/mapbox-angular',
     image: 'assets/projects/default.webp',
-    tags: [
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-    ],
+    tags: [TAGS()['ANGULAR'], TAGS()['TYPESCRIPT'], TAGS()['CSS']],
   },
   {
     title: 'Face detection',
@@ -281,20 +267,7 @@ export const PROJECTS = signal<Projects[]>([
     link: '',
     github: 'https://github.com/kevinjimenez/face-deteccion-angular',
     image: 'assets/projects/default.webp',
-    tags: [
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-    ],
+    tags: [TAGS()['ANGULAR'], TAGS()['TYPESCRIPT'], TAGS()['CSS']],
   },
   {
     title: 'JISIC App',
@@ -302,22 +275,8 @@ export const PROJECTS = signal<Projects[]>([
     link: '',
     github: 'https://github.com/kevinjimenez/Jornadas-JISIC',
     image: 'assets/projects/default.webp',
-    tags: [
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-    ],
+    tags: [TAGS()['ANDROID'], TAGS()['KOTLIN']],
   },
-
   {
     title: 'Chat App',
     description: 'App donde se envia chat en tiempo real con WebSocket.',
@@ -325,17 +284,141 @@ export const PROJECTS = signal<Projects[]>([
     github: 'https://github.com/kevinjimenez/websocket-nestjs',
     image: 'assets/projects/default.webp',
     tags: [
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
-      TAGS()['TAILWIND'],
-      TAGS()['NEXT'],
+      TAGS()['NESTJS'],
+      TAGS()['ANGULAR'],
+      TAGS()['TYPESCRIPT'],
+      TAGS()['CSS'],
+      TAGS()['NODE'],
+    ],
+  },
+  {
+    title: 'Kiosko Digital',
+    description:
+      'Kiosko digital donde se puede consultar los saldos, pagar servicios basicos.',
+    link: '',
+    github: '',
+    image: 'assets/projects/default.webp',
+    tags: [
+      TAGS()['NESTJS'],
+      TAGS()['ANGULAR'],
+      TAGS()['TYPESCRIPT'],
+      TAGS()['CSS'],
+      TAGS()['NODE'],
+      TAGS()['SQLSERVER'],
+      TAGS()['TYPEORM'],
+    ],
+  },
+  {
+    title: 'Integración pago directo (BANRED)',
+    description:
+      'Integracios de servicos a pago directo el cual ayuda a realizar transferencias bancarias inmediatas.',
+    link: '',
+    github: '',
+    image: 'assets/projects/default.webp',
+    tags: [
+      TAGS()['NESTJS'],
+      TAGS()['ANGULAR'],
+      TAGS()['TYPESCRIPT'],
+      TAGS()['CSS'],
+      TAGS()['NODE'],
+      TAGS()['SQLSERVER'],
+      TAGS()['TYPEORM'],
+    ],
+  },
+  {
+    title: 'CrediYa: Credito a funcionarios',
+    description: 'App para aplicar credito a funcionarios de las empresas.',
+    link: '',
+    github: '',
+    image: 'assets/projects/default.webp',
+    tags: [
+      TAGS()['NESTJS'],
+      TAGS()['ANGULAR'],
+      TAGS()['TYPESCRIPT'],
+      TAGS()['CSS'],
+      TAGS()['NODE'],
+      TAGS()['SQLSERVER'],
+      TAGS()['TYPEORM'],
+    ],
+  },
+  {
+    title: 'Juego de la Bolsa',
+    description:
+      'App para la aprender a subastar y coprar acciones en la bolsa (Bolsa de valores de UIO).',
+    link: '',
+    github: '',
+    image: 'assets/projects/default.webp',
+    tags: [
+      TAGS()['NESTJS'],
+      TAGS()['ANGULAR'],
+      TAGS()['TYPESCRIPT'],
+      TAGS()['CSS'],
+      TAGS()['NODE'],
+      TAGS()['SQLSERVER'],
+      TAGS()['TYPEORM'],
+    ],
+  },
+  {
+    title: 'Tracking de vendedores',
+    description:
+      'App para ver las rutas de los vendedores en tiempo real, ademas de cargar productos y ver ventas (Petroecuador).',
+    link: '',
+    github: '',
+    image: 'assets/projects/default.webp',
+    tags: [
+      TAGS()['NESTJS'],
+      TAGS()['ANGULAR'],
+      TAGS()['TYPESCRIPT'],
+      TAGS()['CSS'],
+      TAGS()['NODE'],
+      TAGS()['SQLSERVER'],
+      TAGS()['TYPEORM'],
+    ],
+  },
+  {
+    title: 'Inventario de artículos varios',
+    description:
+      'App para la gestion de inventarios de artículos varios (Petroecuador).',
+    link: '',
+    github: '',
+    image: 'assets/projects/default.webp',
+    tags: [
+      TAGS()['NESTJS'],
+      TAGS()['ANGULAR'],
+      TAGS()['TYPESCRIPT'],
+      TAGS()['CSS'],
+      TAGS()['NODE'],
+      TAGS()['SQLSERVER'],
+      TAGS()['TYPEORM'],
+    ],
+  },
+  {
+    title: 'Pico y Placa',
+    description: 'App para la gestion de vehiculos y alarmas de pico y placa.',
+    link: '',
+    github: '',
+    image: 'assets/projects/default.webp',
+    tags: [
+      TAGS()['NESTJS'],
+      TAGS()['ANGULAR'],
+      TAGS()['TYPESCRIPT'],
+      TAGS()['CSS'],
+      TAGS()['NODE'],
+      TAGS()['SQLSERVER'],
+      TAGS()['TYPEORM'],
+    ],
+  },
+  {
+    title: 'Sixstar Hotels',
+    description:
+      'App para la gestion de cualquier requrimiento ademas de reservas.',
+    link: '',
+    github: '',
+    image: 'assets/projects/default.webp',
+    tags: [
+      TAGS()['ANGULAR'],
+      TAGS()['TYPESCRIPT'],
+      TAGS()['CSS'],
       TAGS()['TAILWIND'],
     ],
   },
