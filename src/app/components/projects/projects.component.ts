@@ -1,10 +1,11 @@
 import { NgComponentOutlet } from '@angular/common';
 import { Component } from '@angular/core';
 import { PROJECTS } from '../../constants/data';
+import { GithubComponent } from '../../shared/components/icons/github.component';
 
 @Component({
   selector: 'projects',
-  imports: [NgComponentOutlet],
+  imports: [NgComponentOutlet, GithubComponent],
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css'],
 })

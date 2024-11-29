@@ -35,6 +35,4 @@ import { SocialPillComponent } from './shared/components/social-pill/social-pill
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
-  title = 'portfolio';
-}
+export class AppComponent {}

@@ -1,9 +1,49 @@
 <section class="header-contanier">
   <article class="header-nav">
-    <a routerLink="/" fragment="top">Inicio</a>
-    <a routerLink="/" fragment="about-me">Sobre mi</a>
-    <a routerLink="/" fragment="experience">Expereiencia</a>
-    <a routerLink="/" fragment="projects">Projectos</a>
-    <a routerLink="/" fragment="contact">Contacto</a>
+    <a
+      routerLink="/"
+      fragment="top"
+      [ngClass]="{
+        'bg-brand-primary text-brand-secundary rounded-md px-5':
+          isActiveFragment('top')
+      }"
+      >Inicio</a
+    >
+    <a
+      routerLink="/"
+      fragment="about-me"
+      [ngClass]="{
+        'bg-brand-primary text-brand-secundary rounded-md px-5':
+          isActiveFragment('about-me')
+      }"
+      >Sobre mi</a
+    >
+    <a
+      routerLink="/"
+      fragment="experience"
+      [ngClass]="{
+        'bg-brand-primary text-brand-secundary rounded-md px-5':
+          isActiveFragment('experience')
+      }"
+      >Expereiencia</a
+    >
+    <a
+      routerLink="/"
+      fragment="projects"
+      [ngClass]="{
+        'bg-brand-primary text-brand-secundary rounded-md px-5':
+          isActiveFragment('projects')
+      }"
+      >Projectos</a
+    >
+    <a
+      routerLink="/"
+      fragment="contact"
+      [ngClass]="{
+        'bg-brand-primary text-brand-secundary rounded-md px-5':
+          isActiveFragment('contact')
+      }"
+      >Contacto</a
+    >
   </article>
 </section>
