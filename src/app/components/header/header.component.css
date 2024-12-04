@@ -3,5 +3,5 @@
 }
 
 .header-nav {
-  @apply px-4 py-2 flex gap-x-10;
+  @apply px-4 py-2 flex gap-x-2 sm:gap-x-10 truncate sm:text-clip;
 }

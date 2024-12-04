@@ -22,8 +22,21 @@
       alt="Captura de pantalla del proyecto {{ project.image }}"
       class="h-[100%] md:h-[200px] aspect-[16/9] object-cover rounded-lg shadow-md transition-transform duration-300 ease-in-out md:hover:scale-105 hover:shadow-lg"
     />
-    <section>
-      <article class="flex gap-x-2 gap-y-1 flex-wrap">
+    <section class="flex flex-row flex-wrap gap-x-2">
+      @if (project.link) {
+      <section>
+        <a
+          href="{{ project.link }}"
+          target="_blank"
+          rel="noopener"
+          class="px-2 py-1 bg-brand-primary/80 hover:bg-brand-primary text-brand-secundary rounded-md flex flex-1 items-center gap-x-2"
+        >
+          <app-link customClass="size-6" />
+          <span class="text-xl"> Preview </span>
+        </a>
+      </section>
+      } @if (project.github) {
+      <section>
         <a
           href="{{ project.github }}"
           target="_blank"
@@ -33,7 +46,8 @@
           <github customClass="size-6" />
           <span class="text-xl"> Code </span>
         </a>
-      </article>
+      </section>
+      }
     </section>
   </div>
 </article>

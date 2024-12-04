@@ -19,3 +19,11 @@
     border-color: transparent;
   }
 }
+
+
+/* Cambiar el ancho en pantallas pequeñas */
+@media (max-width: 480px) {
+  .typing-letter {
+    width: 11.9ch; /* Ajuste para móviles */
+  }
+}

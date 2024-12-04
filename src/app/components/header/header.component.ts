@@ -21,7 +21,6 @@ export class HeaderComponent {
         // Captura el fragmento actual de la URL
         const url = this.router.url;
         this.currentFragment.set(url.includes('#') ? url.split('#')[1] : '');
-        // this.currentFragment = url.includes('#') ? url.split('#')[1] : '';
       }
     });
   }

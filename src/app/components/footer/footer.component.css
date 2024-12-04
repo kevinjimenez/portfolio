@@ -7,9 +7,7 @@
 }
 
 .footer-contend {
-  @apply text-sm sm:text-center text-yellow-200/90;
+  @apply text-xs sm:text-sm sm:text-center text-brand-primary/90;
 }
 
-.footer-options {
-  @apply flex flex-wrap items-center mt-3 text-sm font-medium text-white/90 sm:mt-0;
-}
+
