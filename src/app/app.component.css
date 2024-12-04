@@ -24,6 +24,6 @@
 /* Cambiar el ancho en pantallas pequeñas */
 @media (max-width: 480px) {
   .typing-letter {
-    width: 15ch; /* Ajuste para móviles */
+    width: 13ch; /* Ajuste para móviles */
   }
 }
